@@ -1,0 +1,52 @@
+.card {
+    margin: 30px;
+    padding: 20px 5px 40px 5px;
+    border-top: 4px solid $color-heading;
+    clear: both;
+}
+
+.card:hover {
+    border-color: $color-card-focus;
+}
+
+
+.photo {
+    display: block;
+    width: 200px;
+    height: 0%;
+    margin: 0 auto;
+}
+
+.information {
+    width: 100%;
+    
+    @media #{$brk-wide} {
+    text-align: left;
+    }
+}
+
+.heading {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: $color-heading;
+    padding-top: 10px;
+}
+
+@media screen and (min-width: 840px) {
+    
+.card {
+    margin: 40px auto;
+    padding: 20px 40px 40px;
+    width: 80%;
+    max-width: 1000px;
+}
+    
+.photo {
+    width: 30%;
+    margin: 20px 30px;
+}
+    
+.information{
+    text-align: left;
+  }
+}

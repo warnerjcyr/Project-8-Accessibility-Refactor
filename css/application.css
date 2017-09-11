@@ -1,0 +1,287 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #81B5A3;
+  background: #2d2b30; }
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: #999; }
+a:hover {
+  color: #f9b677; }
+a.buy {
+  color: #fff; }
+a.buy:hover {
+  color: #f9b677; }
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+  .flex {
+    display: flex;
+    max-width: 1200px; }
+
+  main {
+    padding-top: 20px; }
+
+  main p {
+    line-height: 1.6em; } }
+.card {
+  margin: 30px;
+  padding: 20px 5px 40px 5px;
+  border-top: 4px solid #e3d4c1;
+  clear: both; }
+
+.card:hover {
+  border-color: #96731A; }
+
+.photo {
+  display: block;
+  width: 200px;
+  height: 0%;
+  margin: 0 auto; }
+
+.information {
+  width: 100%; }
+  @media (min-width: 840px) {
+    .information {
+      text-align: left; } }
+
+.heading {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #e3d4c1;
+  padding-top: 10px; }
+
+@media screen and (min-width: 840px) {
+  .card {
+    margin: 40px auto;
+    padding: 20px 40px 40px;
+    width: 80%;
+    max-width: 1000px; }
+
+  .photo {
+    width: 30%;
+    margin: 20px 30px; }
+
+  .information {
+    text-align: left; } }
+/* Footer styles */
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px; }
+  @media (min-width: 840px) {
+    footer {
+      font-size: 1.3em;
+      max-width: 1200px;
+      margin: 40px auto; } }
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em; }
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+footer ul li {
+  display: inline-block; }
+
+a.social {
+  display: inline-block;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s; }
+a.twitter {
+  background-image: url(../img/twitter-32.png); }
+a.youtube {
+  background-image: url(../img/youtube-32.png); }
+a.spotify {
+  background-image: url(../img/spotify-32.png); }
+a.social:hover {
+  opacity: 1; }
+
+.clearfix {
+  clear: both; }
+
+header {
+  background: url("../img/concert02.jpg") no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  height: 350px; }
+  @media (min-width: 840px) {
+    header {
+      min-height: 470px; } }
+
+.tag {
+  color: black;
+  padding: 10px;
+  letter-spacing: 5px; }
+
+.name {
+  font-weight: 300; }
+
+header .tagname {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  padding-top: 15px;
+  margin-bottom: 20px;
+  color: #333333; }
+  @media (min-width: 840px) {
+    header .tagname {
+      font-size: 4em;
+      padding-top: 40px; } }
+
+.tagline {
+  font-weight: 400;
+  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  color: #781125; }
+  @media (min-width: 840px) {
+    .tagline {
+      font-weight: 400;
+      font-size: 2em; } }
+
+.main-nav {
+  width: 100%;
+  background: rgba(45, 43, 48, 0.8);
+  min-height: 30px;
+  padding: 10px;
+  position: fixed; }
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0; }
+  @media (min-width: 840px) {
+    .nav {
+      max-width: 1200px;
+      padding: 0 30px; } }
+
+.nav .name {
+  display: block;
+  margin-right: auto;
+  color: white;
+  letter-spacing: 5px; }
+
+.nav li {
+  padding: 5px 10px 10px 10px; }
+
+.nav a {
+  transition: all .5s; }
+
+.nav a:hover {
+  color: #fff; }
+
+body, header, header .tagname, .main-nav, .container, th {
+  text-align: center; }
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block; }
+
+legend {
+  display: none; }
+
+fieldset {
+  border: none; }
+
+.newsletter {
+  text-align: right; }
+
+textarea {
+  border: 3px solid transparent; }
+
+label[for="song"], label[for="albums"] {
+  margin: 15px 0;
+  display: inline-block; }
+
+input[type="text"], input[type="email"] {
+  margin-top: 23px;
+  border: 3px solid transparent; }
+input[type="radio"] {
+  margin: 0 10px; }
+input[type="radio"]:nth-of-type(1) {
+  margin-left: 0; }
+
+select,
+button {
+  color: #fff;
+  background-color: #316154; }
+
+select:focus {
+  outline-style: none;
+  box-shadow: none;
+  outline: none; }
+
+button {
+  outline: 0; }
+
+select:focus {
+  border: 2px solid #f9b677;
+  transition: all 0.3s ease-in-out; }
+
+button {
+  margin-top: 15px; }
+
+input:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #81B5A3;
+  background: #f9b677;
+  transition: all 0.3s ease-in-out; }
+
+table, th, td {
+  border: 1px solid #f6d2b0; }
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto; }
+  @media (min-width: 840px) {
+    table {
+      width: 65%;
+      border-collapse: collapse;
+      margin-left: 50px; } }
+
+th {
+  height: 30px; }
+
+td {
+  padding: 7px;
+  text-align: left; }
+
+caption {
+  font-size: 1.2em;
+  padding: 0 0 15px; }
+
+.heading {
+  display: inline-block;
+  margin: 0;
+  padding-bottom: 10px; }
+
+.pick {
+  width: 40px;
+  height: 0%;
+  padding: 10px; }
+
+@media screen and (min-width: 840px) {
+  #tourcard {
+    padding-left: 0; } }
+
+/*# sourceMappingURL=application.css.map */

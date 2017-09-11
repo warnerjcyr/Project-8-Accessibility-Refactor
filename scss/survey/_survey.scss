@@ -1,0 +1,81 @@
+form {
+    margin: 0 auto;
+    text-align: left;
+    display: inline-block;
+}
+
+legend {
+    display: none;
+}
+
+fieldset {
+    border: none;
+}
+
+.container {
+    @extend %centered;
+}
+
+.newsletter {
+    text-align: right;
+
+}
+
+textarea {
+    border: 3px solid transparent;
+}
+
+label[for="song"], label[for="albums"] {
+    margin: 15px 0;
+    display: inline-block;
+}
+
+input {
+    
+    &[type="text"],
+    &[type="email"] {
+    margin-top: 23px;
+    border: 3px solid transparent;
+    }
+
+    &[type="radio"] {
+    margin: 0 10px;
+    }
+
+    &[type="radio"]:nth-of-type(1) {
+    margin-left: 0;
+    } 
+}
+
+select,
+button {
+    color: $color-white;
+    background-color: $color-dropdown;
+}
+
+select:focus {
+    outline-style:none;
+    box-shadow:none;
+    outline:none;
+}
+
+button {
+    outline: 0;
+}
+
+select:focus {
+    border: 2px solid $color-focus;
+    transition:  all 0.3s ease-in-out;
+}
+
+button {
+    margin-top: 15px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0;
+    border-color: $color-border;
+    background: $color-focus;
+    transition:  all 0.3s ease-in-out;
+}

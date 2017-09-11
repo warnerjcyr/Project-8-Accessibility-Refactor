@@ -1,0 +1,48 @@
+table, th, td {
+    border: 1px solid $color-table;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    
+    @media #{$brk-wide} {
+    width: 65%;
+    border-collapse: collapse;
+    margin-left: 50px;
+    }
+}
+
+th {
+    height: 30px;
+    @extend %centered;
+}
+
+td {
+    padding: 7px;
+    text-align: left;
+}
+
+caption {
+    font-size: 1.2em;
+    padding: 0 0 15px;
+}
+
+.heading {
+    display: inline-block;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.pick{
+    width: 40px;
+    height: 0%;
+    padding: 10px;
+}
+
+@media screen and (min-width: 840px) {
+    
+#tourcard {
+    padding-left: 0;
+    }
+}
